@@ -16,6 +16,7 @@
 body {
   font-family: BreadleySans-Regular, sans-serif;
   color: #000;
+  margin: 0 30px 0 30px;
 }
 
 #welcome-section {
@@ -44,6 +45,8 @@ h1 {
 
 ul {
   list-style: none;
+  margin-right: 30px;
+  padding: 0;
 }
 
 a {
@@ -73,6 +76,7 @@ a {
   padding: 30px;
   color: #000;
   font-weight: 600;
+  transition: transform 1s;
 }
 
 .nav a:hover {
@@ -80,6 +84,7 @@ a {
   color: #fff;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
+  transform: translateY(5px);
 }
 
 h2 {
@@ -107,7 +112,7 @@ h2 {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   opacity: 1;
-  transition: transform 750ms;
+  transition: transform 1s;
 }
 
 .project-image {
@@ -130,7 +135,6 @@ p {
   color: #fff;
   opacity: 1;
   transform: translateY(5px);
-  
 }
 
 .projects-title {
@@ -139,24 +143,47 @@ p {
 }
 
 #contact {
-    width: 100vw;
-    height: 60px;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-list {
-        display: flex;
-        justify-content: flex-end;
-        color: #000;
-        font-size: 20px;
-        margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+  margin: 20px auto;
 }
 
+.contact-list a {
+  color: #000;
+  font-size: 22px;
+  align-self: flex-end;
+  align-self: flex-end;
+  transition: transform 1s;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
 
-
+.contact-list a:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(5px);
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
 
 @media only screen and (max-width: 768px) {
-    #contact {
-        background-color: #000;
-        color: #fff;
-    }
+  #contact {
+    background-color: #000;
+  }
+
+  .contact-list a {
+    color: #fff;
+  }
+
+  .nav-list {
+    background-color: rgb(128, 128, 128);
+  }
 }
