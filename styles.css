@@ -1,0 +1,61 @@
+@font-face {
+    font-family: RansomBlancoZero;
+    src: url("./dafont/RansomBlancoZero.ttf");
+}
+
+@font-face {
+    font-family: BreadleySans-Regular;
+    src: url("./dafont/BreadleySans-Regular.ttf");
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: BreadleySans-Regular,
+    sans-serif;
+    color: #000;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: RansomBlancoZero, sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.welcome-description {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    
+}
+
+.nav a {
+    display: block;
+    font-size: 24px;
+}
+
+.nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
