@@ -42,20 +42,87 @@ h1 {
     font-weight: 800;
 }
 
-.nav-list {
+ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  margin: 0;
+  background-color: rgba(128, 128, 128, 0.159);
+}
+
 .nav-list li {
+    padding: 10px;
+    margin: 0;
     
 }
 
 .nav a {
     display: block;
     font-size: 24px;
+    padding: 30px;
+    color: #000;
+    font-weight: 600;
 }
 
 .nav a:hover {
     background-color: #000;
     color: #fff;
+}
+
+h2 {
+        font-size: 60px;
+        text-align: center;
+        margin: 20px 0;
+}
+
+.projects__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+}
+
+.project-box {
+    border: solid #000 1px;
+    width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.project-box:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.projects-title {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.project-image {
+    opacity: .5;
+}
+
+.project-image:hover {
+    opacity: 1;
+}
+
+.project-box p {
+        margin: 10px;
+        font-size: 18px;
 }
