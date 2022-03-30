@@ -39,6 +39,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   font-weight: 800;
+  text-shadow: 2px 2px 1px rgba(128, 128, 128, 0.159);
 }
 
 ul {
@@ -85,6 +86,7 @@ h2 {
   font-size: 60px;
   text-align: center;
   margin: 20px 0;
+  text-shadow: 2px 2px 1px rgba(128, 128, 128, 0.159);
 }
 
 .projects__list {
@@ -97,7 +99,7 @@ h2 {
 
 .project-box {
   border: solid #000 1px;
-  width: 300px;
+  width: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,6 +107,7 @@ h2 {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   opacity: 1;
+  transition: transform 750ms;
 }
 
 .project-image {
@@ -126,6 +129,8 @@ p {
   background-color: #000;
   color: #fff;
   opacity: 1;
+  transform: translateY(5px);
+  
 }
 
 .projects-title {
@@ -133,4 +138,25 @@ p {
   font-size: 24px;
 }
 
+#contact {
+    width: 100vw;
+    height: 60px;
+}
 
+.contact-list {
+        display: flex;
+        justify-content: flex-end;
+        color: #000;
+        font-size: 20px;
+        margin-top: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #contact {
+        background-color: #000;
+        color: #fff;
+    }
+}
